@@ -72,6 +72,35 @@
 
         console.log(makeName("Beyoncé", "Carter", "Knowles"));
 
+        console.log('Making better name function');
+        // Make a name with middle initial
+        function makeBetterName(firstName, middleName, lastName) {
+            if (middleName.length === 1) {
+            middleName = middleName + ".";
+            let fullName = firstName + " " + middleName + " " + lastName;
+            return fullName;
+        } else {
+            let fullName = firstName + " " + middleName + " " + lastName;
+            return fullName;
+          }
+        }
+        console.log(makeBetterName("Joan", "Marie", "Larkin"));
+        console.log(makeBetterName("John", "F", "Kennedy"));
+
+        // Baseball Game Score
+        function gameResult(homeScore, awayScore) {
+            if (homeScore > awayScore) {
+                return 'The home team won';
+            } else if (homeScore === awayScore) {
+                return 'They tied';
+            } else {
+                return 'The away team won';
+            }
+        }
+        console.log(gameResult(20, 54));
+        console.log(gameResult(44, 10));
+        console.log(gameResult(33, 33));
+        
         </script>  
 </body>
 </html>
